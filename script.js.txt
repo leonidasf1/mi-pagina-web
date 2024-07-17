@@ -1,0 +1,9 @@
+document.getElementById('subscription-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const responseMessage = document.getElementById('response-message');
+    
+    responseMessage.textContent = `Gracias, ${name}. Te has suscrito exitosamente con el correo ${email}.`;
+});
